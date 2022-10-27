@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Token Routes
+title: 🖌️ Token Routes
 parent: API Routes
 nav_order: 4
 ---
 
-# :art: Token Routes
+# 🖌️ Token Routes
 
 The Token routes are a sub-section of the broader Collections routes and enable retrieval of information about individual tokens.
 

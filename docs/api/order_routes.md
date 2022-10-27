@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Order Routes
+title: 📄 Order Routes
 parent: API Routes
 nav_order: 5
 ---
 
-# :page_facing_up: Order Routes
+# 📄 Order Routes
 
 The order routes contain endpoints to place orders on the Archipelago marketplace.
 

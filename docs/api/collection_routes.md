@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Collection Routes
+title: 🎨 Collection Routes
 parent: API Routes
 nav_order: 3
 ---
 
-# :art: Collections Routes
+# 🎨 Collections Routes
 
 The collections routes contain endpoints to retrieve information about collections and the tokens within them.
 

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: User Routes
+title: 👩‍💼 User Routes
 parent: API Routes
 nav_order: 6
 ---
 
-# :female-office-worker: User Routes
+# 👩‍💼 User Routes
 
 The user routes contain endpoints to register, login, and manage all user functions.
 
