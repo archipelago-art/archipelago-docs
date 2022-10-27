@@ -5,7 +5,7 @@ parent: API Routes
 nav_order: 2
 ---
 
-# :chart_with_upwards_trend: Market Routes
+# 📈 Market Routes
 
 The base-level market routes contain endpoints to retrieve information about the overall market (views, volume, floors, and more).
 

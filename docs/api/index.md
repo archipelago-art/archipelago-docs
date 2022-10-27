@@ -5,6 +5,8 @@ nav_order: 2
 has_children: true
 ---
 
+# API Routes
+
 There are two main resources that are the base of the Archipelago API: **Market** and **User**
 
 The overall hierarchy of the Archipelago API is structured as follows:
