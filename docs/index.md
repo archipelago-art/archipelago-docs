@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Archipelago API
+title: Overview
 nav_order: 1
-has_children: true
 ---
 
 # Archipelago API Overview

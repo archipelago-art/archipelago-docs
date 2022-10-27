@@ -2,7 +2,6 @@
 layout: default
 title: Message Types
 parent: WebSocket API
-grand_parent: Archipelago API
 nav_order: 2
 ---
 
