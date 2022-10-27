@@ -2,6 +2,7 @@
 layout: default
 title: WebSocket API
 nav_order: 2
+parent: Archipelago API
 has_children: true
 ---
 

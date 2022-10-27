@@ -1,3 +1,10 @@
+---
+layout: default
+title: Archipelago API
+nav_order: 1
+has_children: true
+---
+
 # Archipelago API Overview
 
 The Archipelago API is a REST-based API to facilitate transactions and retrieve information on the Archipelago marketplace.
