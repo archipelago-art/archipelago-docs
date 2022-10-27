@@ -2,6 +2,7 @@
 layout: default
 title: Sample Code
 parent: WebSocket API
+grand_parent: Archipelago API
 nav_order: 3
 ---
 
