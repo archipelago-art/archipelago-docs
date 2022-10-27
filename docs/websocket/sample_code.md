@@ -1,3 +1,10 @@
+---
+layout: default
+title: Sample Code
+parent: WebSocket API
+nav_order: 3
+---
+
 # Sample WebSocket Code
 
 The code below provides a simplified example of how to connect to the Archipelago WebSocket API to send and receive your first messages.
