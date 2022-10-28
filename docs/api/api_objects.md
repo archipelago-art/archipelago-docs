@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 📦 Object Types
-parent: 🗒️ API Routes
+title: Object Types
+parent: REST API
 nav_order: 1
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 🎨 Collection Routes
-parent: 🗒️ API Routes
+title: Collection Routes
+parent: REST API
 nav_order: 3
 ---
 

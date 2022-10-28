@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 📈 Market Routes
-parent: 🗒️ API Routes
+title: Market Routes
+parent: REST API
 nav_order: 2
 ---
 

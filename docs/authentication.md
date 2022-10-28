@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 🔑 Authentication
+title: Authentication
 nav_order: 2
 ---
 

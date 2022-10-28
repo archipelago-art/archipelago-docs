@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 📄 Order Routes
-parent: 🗒️ API Routes
+title: Order Routes
+parent: REST API
 nav_order: 5
 ---
 

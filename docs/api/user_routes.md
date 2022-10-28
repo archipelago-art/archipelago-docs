@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 👩‍💼 User Routes
-parent: 🗒️ API Routes
+title: User Routes
+parent: REST API
 nav_order: 6
 ---
 

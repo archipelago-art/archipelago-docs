@@ -1,20 +1,28 @@
 ---
 layout: default
-title: 🗒️ API Routes
+title: REST API
 nav_order: 3
 has_children: true
 ---
 
-# 🗒️ API Routes
+# 🗒️ REST API
 
-There are two main resources that are the base of the Archipelago API: **Market** and **User**
+## Base Path
+
+The API base path is: `https://api.archipelago.art/:version`
+
+Currently `v1` is the latest and only version, so all API calls should be made to `https://api.archipelago.art/v1`
+
+All requests must be made over HTTPS.
+
+## Resource Hierarchy
 
 The overall hierarchy of the Archipelago API is structured as follows:
 
 ```
 https://api.archipelago.art/v1
-|  market
-|  |- collections
-|  |- orders
-|  user
+|  /market
+|  |- /collections
+|  |- /orders
+|  /user
 ```

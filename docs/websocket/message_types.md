@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 📒 Message Types
-parent: ↔️ WebSocket API
+title: Message Types
+parent: WebSocket API
 nav_order: 2
 ---
 

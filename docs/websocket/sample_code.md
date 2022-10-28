@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 💻 Sample Code
-parent: ↔️ WebSocket API
+title: Sample Code
+parent: WebSocket API
 nav_order: 3
 ---
 

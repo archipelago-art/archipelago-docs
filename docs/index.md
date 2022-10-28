@@ -1,17 +1,17 @@
 ---
 layout: default
-title: 🏡 Overview
+title: Overview
 nav_order: 1
 ---
 
-# Archipelago API Overview
+# 🏡 Overview
 
-The Archipelago API is a REST-based API to facilitate transactions and retrieve information on the Archipelago marketplace.
+This site serves as documentation for the [Archipelago Art](https://archipelago.art/) APIs. You can either navigate using the sidebar on the left, or by using the search functionality in the search box above.
 
-## Base Path
+## REST API
 
-The API base path is: `https://api.archipelago.art/:version`
+See the [REST API](api/index.md) section for detailed information on these endpoints.
 
-Currently `v1` is the latest and only version, so all API calls should be made to `https://api.archipelago.art/v1`
+## WebSocket API
 
-All requests must be made over HTTPS.
+The [WebSocket API](websocket/index.md) allows for real-time updates of key events in the Archipelago marketplace.

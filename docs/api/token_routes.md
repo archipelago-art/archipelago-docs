@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 🖌️ Token Routes
-parent: 🗒️ API Routes
+title: Token Routes
+parent: REST API
 nav_order: 4
 ---
 

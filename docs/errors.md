@@ -1,10 +1,10 @@
 ---
 layout: default
-title: ❗ Errors
+title: Errors
 nav_order: 3
 ---
 
-# ❗ Errors
+# 🚫 Errors
 
 Archipelago uses the conventional HTTP response codes to indicate the success or failure of an API request.
 
