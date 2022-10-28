@@ -5,7 +5,7 @@ parent: API Routes
 nav_order: 1
 ---
 
-# Object Types
+# 📦 Object Types
 
 These are the different objects that will be found in the Archipelago API. Documentation in an individual route will likely reference one or more of these objects.
 

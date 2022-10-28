@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Message Types
+title: 📒 Message Types
 parent: WebSocket API
 nav_order: 2
 ---
 
-# WebSocket Message Types
+# 📒 WebSocket Message Types
 
 These are the different types of messages that you can expect to receive once subscribed to a topic on the Archipelago WebSocket.
 

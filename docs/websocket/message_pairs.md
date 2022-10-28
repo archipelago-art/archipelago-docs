@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Message Pairs
+title: ✉️ Message Pairs
 parent: WebSocket API
 nav_order: 1
 ---
 
-# Message Pairs
+# ✉️ Message Pairs
 
 These are the pairs of message that you (as the client) will send and receive when establishing a connection to the Archipelago WebSocket and subscribing to different topics.
 
