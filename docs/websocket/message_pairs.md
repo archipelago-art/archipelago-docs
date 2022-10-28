@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ✉️ Message Pairs
-parent: WebSocket API
+parent: ↔️ WebSocket API
 nav_order: 1
 ---
 
