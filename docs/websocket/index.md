@@ -1,6 +1,6 @@
 ---
 layout: default
-title: WebSocket API
+title: ↔️ WebSocket API
 nav_order: 3
 has_children: true
 ---
