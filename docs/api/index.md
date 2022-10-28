@@ -1,11 +1,11 @@
 ---
 layout: default
-title: API Routes
+title: 🗒️ API Routes
 nav_order: 2
 has_children: true
 ---
 
-# API Routes
+# 🗒️ API Routes
 
 There are two main resources that are the base of the Archipelago API: **Market** and **User**
 
