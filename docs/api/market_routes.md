@@ -185,7 +185,7 @@ curl --request GET \
 }
 ```
 
-## GET `/market/asks/:ask`
+## GET `/market/asks/:askId`
 
 Returns the details of a specific ask
 

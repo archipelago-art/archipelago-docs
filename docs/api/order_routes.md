@@ -11,4 +11,4 @@ The order routes contain endpoints to place orders on the Archipelago marketplac
 
 ## POST `/market/orders`
 
-:construction: Coming soon!
+🚧 Coming soon!
