@@ -1,17 +1,58 @@
-title: "Archipelago Art"
+title: Archipelago Art
+description: Documentation for the Archipelago Art APIs
+
 remote_theme: just-the-docs/just-the-docs
 color_scheme: archipelago-light
 search_enabled: true
+
+exclude:
+  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # specific to the theme website:
+  - bin/
+  - lib/
+  - "*.gemspec"
+  - "*.gem"
+  - LICENSE.txt
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
 
 # Enable or disable heading anchors
 heading_anchors: true
 
 # Makes Aux links open in a new tab. Default is false
+# Aux links for the upper right navigation
+# aux_links:
+#   "Archipelago Marketplace":
+#     - "//archipelago.art"
+
+# Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
+
+# Adds an external link to the side nav
+nav_external_links:
+  - title: Archipelago Marketplace
+    url: https://archipelago.art
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
 # Back to top link
 back_to_top: true
-back_to_top_text: "Back to top"
+back_to_top_text: "Back to top ⬆️"
 
 # Callout configs
 callouts:
