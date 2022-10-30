@@ -3,15 +3,25 @@ layout: default
 title: Object Types
 parent: REST API
 nav_order: 1
+last_modified_date: "2022-10-30"
 ---
 
 # 📦 Object Types
+{: .no_toc }
 
-These are the different objects that will be found in the Archipelago API. Documentation in an individual route will likely reference one or more of these objects.
+These are the different objects that will be found in the Archipelago API. 
+The response data for an individual route will likely reference one or more of these objects.
+
+## Table of contents
+{: .no_toc .text-delta }
+- TOC
+{:toc}
+
+---
 
 ## Collection Objects
 
-### `CollectionInfo` Object
+### `CollectionInfo`
 
 | Name                    | Type     | Description                                                                 |
 | ----------------------- | -------- | --------------------------------------------------------------------------- |
@@ -29,7 +39,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 | `fees`                  | `array`  | A list of `CollectionFees` objects for the collection.                      |
 | `tokens`                | `array`  | A list of `CollectionToken` objects in the collection.                      |
 
-### `CollectionFees` Object
+### `CollectionFees`
 
 | Name     | Type     | Description                            |
 | -------- | -------- | -------------------------------------- | ------- |
@@ -37,14 +47,14 @@ These are the different objects that will be found in the Archipelago API. Docum
 | `micros` | `string` | The amount of the fee.                 |
 | `static` | `string` | A boolean `true                        | false`. |
 
-### `CollectionToken` Object
+### `CollectionToken`
 
 | Name         | Type     | Description                                      |
 | ------------ | -------- | ------------------------------------------------ |
 | `tokenId`    | `string` | The unique id of a token.                        |
 | `tokenIndex` | `string` | The unique index of a token within a collection. |
 
-### `CollectionFeature` Object
+### `CollectionFeature`
 
 | Name        | Type     | Description                          |
 | ----------- | -------- | ------------------------------------ |
@@ -52,7 +62,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 | `name`      | `string` | The name of the feature.             |
 | `traits`    | `array`  | A list of `CollectionTrait` objects. |
 
-### `CollectionTrait` Object
+### `CollectionTrait`
 
 | Name           | Type     | Description                                     |
 | -------------- | -------- | ----------------------------------------------- |
@@ -61,7 +71,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 | `tokenIndices` | `array`  | A list of tokenIndices that contain this trait. |
 | `slug`         | `string` | The unique slug of the trait.                   |
 
-### `CollectionAsk` Object
+### `CollectionAsk`
 
 | Name          | Type     | Description                                            |
 | ------------- | -------- | ------------------------------------------------------ |
@@ -69,7 +79,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 | `listingTime` | `string` | The time the ask was listed.                           |
 | `venue`       | `array`  | The venue or marketplace that the ask originated from. |
 
-### `CollectionSale` Object
+### `CollectionSale`
 
 | Name       | Type     | Description                               |
 | ---------- | -------- | ----------------------------------------- |
@@ -79,7 +89,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 
 ## Token Objects
 
-### `TokenInfo` Object
+### `TokenInfo`
 
 | Name             | Type     | Description                                                                   |
 | ---------------- | -------- | ----------------------------------------------------------------------------- |
@@ -92,7 +102,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 | `asks`           | `object` | A wrapper object that potentially contains a list of `CollectionAsk` objects. |
 | `bids`           | `object` | A wrapper object that potentially contains a list of `CollectionBid` objects  |
 
-### `TokenTrait` Object
+### `TokenTrait` 
 
 | Name          | Type     | Description                             |
 | ------------- | -------- | --------------------------------------- |
@@ -103,7 +113,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 | `featureSlug` | `string` | The project index on artblocks.         |
 | `traitSlug`   | `string` | The project index on artblocks.         |
 
-### `TokenHistory` Object
+### `TokenHistory`
 
 | Name              | Type      | Description                                                                |
 | ----------------- | --------- | -------------------------------------------------------------------------- |
@@ -117,7 +127,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 
 ## User Objects
 
-### `User` Object
+### `User`
 
 | Name          | Type     | Description                                  |
 | ------------- | -------- | -------------------------------------------- |
@@ -125,7 +135,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 | `email`       | `string` | The user's email address.                    |
 | `preferences` | `string` | The user's preferences.                      |
 
-### `UserBid` Object
+### `UserBid`
 
 | Name        | Type     | Description                                                          |
 | ----------- | -------- | -------------------------------------------------------------------- |
@@ -141,7 +151,7 @@ These are the different objects that will be found in the Archipelago API. Docum
 | `agreement` | `string` | The on-chain agreement data for the bid.                             |
 | `scope`     | `string` | The scope for the bid, can be one of `PROJECT`, `TRAIT`, or `TOKEN`. |
 
-### `BidScope` Object
+### `BidScope`
 
 | Name         | Type     | Description                                  |
 | ------------ | -------- | -------------------------------------------- |
