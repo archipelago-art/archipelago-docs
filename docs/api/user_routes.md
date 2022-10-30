@@ -19,9 +19,9 @@ The user routes contain endpoints to register, login, and manage all user functi
 
 ## POST `/user/login`
 
-:construction: Coming soon!
+🚧 Coming soon!
 
-## POST `/user/set-email` :lock:
+## POST `/user/set-email` 🔒 
 
 Updates the email address that is associated to the user. This will trigger an email to be sent to that email address to confirm the change. Confirmation should only be done via the link in the email.
 
@@ -47,7 +47,7 @@ curl --request POST \
 }
 ```
 
-## GET `/user/info` :lock:
+## GET `/user/info` 🔒
 
 Returns basic user information (as a `UserInfo` object) for the authenticated user.
 
@@ -73,7 +73,7 @@ curl --request GET \
 }
 ```
 
-## GET `/user/bids` :lock:
+## GET `/user/bids` 🔒
 
 Returns a list of active bids for the authenticated user.
 
@@ -113,7 +113,7 @@ curl --request GET \
 }
 ```
 
-## GET `/user/asks` :lock:
+## GET `/user/asks` 🔒
 
 Returns a list of active sales for the authenticated user.
 
@@ -151,7 +151,7 @@ curl --request GET \
 }
 ```
 
-## GET `/user/:account/tokens` :lock:
+## GET `/user/:account/tokens` 🔒
 
 ```bash
 curl --request GET \
