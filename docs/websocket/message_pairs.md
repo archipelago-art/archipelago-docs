@@ -6,12 +6,21 @@ nav_order: 1
 ---
 
 # ✉️ Message Pairs
+{: .no_toc }
 
 These are the pairs of message that you (as the client) will send and receive when establishing a connection to the Archipelago WebSocket and subscribing to different topics.
+
+## Table of Contents
+{: .no_toc .text-delta }
+- TOC
+{:toc }
+
+---
 
 ## Heartbeat
 
 ### Example Request
+{: .no_toc }
 
 ```json
 {
@@ -20,6 +29,7 @@ These are the pairs of message that you (as the client) will send and receive wh
 ```
 
 ### Example Response
+{: .no_toc }
 
 ```json
 {
@@ -34,6 +44,7 @@ These are the pairs of message that you (as the client) will send and receive wh
 ## Subscribe Topic
 
 ### Example Request
+{: .no_toc }
 
 ```json
 {
@@ -43,6 +54,7 @@ These are the pairs of message that you (as the client) will send and receive wh
 ```
 
 ### Example Response
+{: .no_toc }
 
 ```json
 {
@@ -57,6 +69,7 @@ These are the pairs of message that you (as the client) will send and receive wh
 ## Unsubscribe Topic
 
 ### Example Request
+{: .no_toc }
 
 ```json
 {
@@ -66,6 +79,7 @@ These are the pairs of message that you (as the client) will send and receive wh
 ```
 
 ### Example Response
+{: .no_toc }
 
 ```json
 {

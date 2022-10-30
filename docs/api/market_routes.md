@@ -6,12 +6,21 @@ nav_order: 2
 ---
 
 # 📈 Market Routes
+{: .no_toc }
 
 The base-level market routes contain endpoints to retrieve information about the overall market (views, volume, floors, and more).
+
+## Table of contents
+{: .no_toc .text-delta }
+- TOC
+{:toc}
+
+---
 
 ## GET `/market/views`
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -19,6 +28,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -56,12 +66,14 @@ curl --request GET \
 Returns the market volume (total sales, in WEI) for each collection on the Archipelago marketplace. The required `duration` query parameter determines the period of time that the volume is calculated for.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name       | Type     | Parameter Type | Required? | Description                                                                   |
 | ---------- | -------- | -------------- | --------- | ----------------------------------------------------------------------------- |
 | `duration` | `string` | `query`        | Yes       | The duration to lookback. Must be one of the three values: `24h`, `7d`, `30d` |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -69,6 +81,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 This key of the response object is the collection `slug` and the value is the market volume in WEI.
 
@@ -87,6 +100,7 @@ This key of the response object is the collection `slug` and the value is the ma
 Returns the floor ask for each collection.
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -94,6 +108,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 This key of the response object is the collection `slug` and the value is an object with the basic ask details.
 Additional information is included if the ask is on Archipelago vs. another marketplace.
@@ -123,6 +138,7 @@ Additional information is included if the ask is on Archipelago vs. another mark
 Returns the floor bid (price, in WEI) for each collection. Any floor bid is a `PROJECT` level bid.
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -130,6 +146,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 This key of the response object is the collection `slug` and the value is an object with the basic bid details.
 
@@ -156,6 +173,7 @@ This key of the response object is the collection `slug` and the value is an obj
 Returns the details of a specific bid.
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -163,6 +181,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -190,6 +209,7 @@ curl --request GET \
 Returns the details of a specific ask
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -197,6 +217,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {

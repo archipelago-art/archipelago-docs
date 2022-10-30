@@ -6,12 +6,21 @@ nav_order: 2
 ---
 
 # 📒 WebSocket Message Types
+{: .no_toc }
 
 These are the different types of messages that you can expect to receive once subscribed to a topic on the Archipelago WebSocket.
+
+## Table of Contents
+{: .no_toc .text-delta }
+- TOC
+{:toc}
+
+---
 
 ## Token Transferred
 
 ### Example Message
+{: .no_toc }
 
 ```json
 {
@@ -37,6 +46,7 @@ These are the different types of messages that you can expect to receive once su
 ## Token Traded
 
 ### Example Message
+{: .no_toc }
 
 ```json
 {
@@ -67,6 +77,7 @@ These are the different types of messages that you can expect to receive once su
 ## Token Minted
 
 ### Example Message
+{: .no_toc }
 
 ```json
 {
@@ -88,6 +99,7 @@ These are the different types of messages that you can expect to receive once su
 ## Bid Placed
 
 ### Example Message
+{: .no_toc }
 
 ```json
 {
@@ -118,6 +130,7 @@ These are the different types of messages that you can expect to receive once su
 ## Bid Cancelled
 
 ### Example Message
+{: .no_toc }
 
 ```json
 {
@@ -136,6 +149,7 @@ These are the different types of messages that you can expect to receive once su
 ## Ask Placed
 
 ### Example Message
+{: .no_toc }
 
 ```json
 {
@@ -162,6 +176,7 @@ These are the different types of messages that you can expect to receive once su
 ## Ask Cancelled
 
 ### Example Message
+{: .no_toc }
 
 ```json
 {
@@ -181,6 +196,7 @@ These are the different types of messages that you can expect to receive once su
 ## Traits Updated
 
 ### Example Message
+{: .no_toc }
 
 ```json
 {
@@ -258,6 +274,7 @@ These are the different types of messages that you can expect to receive once su
 ## Images Updated
 
 ### Example Message
+{: .no_toc }
 
 ```json
 {
@@ -275,7 +292,3 @@ These are the different types of messages that you can expect to receive once su
   }
 }
 ```
-
-# Message Nonce
-
-Any message that you send may include an optional `nonce` field. If specified, the server will return it back to you in the response message. This can be useful if you want to track the reponse to individual messages admist a large amount of traffic. An example of this can be found in the sample code below.

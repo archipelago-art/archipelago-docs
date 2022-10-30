@@ -6,14 +6,23 @@ nav_order: 3
 ---
 
 # 🎨 Collections Routes
+{: .no_toc }
 
 The collections routes contain endpoints to retrieve information about collections and the tokens within them.
+
+## Table of contents
+{: .no_toc .text-delta }
+- TOC
+{:toc}
+
+---
 
 ## GET `/market/collections`
 
 Returns a list of top-level information (as `CollectionInfo` objects) for all Archipelago supported collections.
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -21,6 +30,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 [
@@ -63,12 +73,14 @@ curl --request GET \
 Returns the top-level details (as a `CollectionInfo` object) of a single collection, as well as a list of the tokens (as `CollectionToken` objects) in the collection.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name   | Type     | Parameter Type | Required? | Description                                                                                      |
 | ------ | -------- | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
 | `slug` | `string` | `path`         | Yes       | The unique slug of the collection. This will be all lowercase and have dashes instead of spaces. |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -76,6 +88,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -129,12 +142,14 @@ curl --request GET \
 Returns the features and traits of a single collection (as a `CollectionFeature` object, as well as a list of each token that has a given trait.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name   | Type     | Parameter Type | Required? | Description                                                                                      |
 | ------ | -------- | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
 | `slug` | `string` | `path`         | Yes       | The unique slug of the collection. This will be all lowercase and have dashes instead of spaces. |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -142,6 +157,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 [
@@ -199,12 +215,14 @@ curl --request GET \
 Returns the lowest ask (price) for each token in a collection that has at least one active ask. They key of the 'asks' object is the `tokenIndex` that the ask is associated to.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name   | Type     | Parameter Type | Required? | Description                                                                                      |
 | ------ | -------- | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
 | `slug` | `string` | `path`         | Yes       | The unique slug of the collection. This will be all lowercase and have dashes instead of spaces. |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -212,6 +230,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -244,12 +263,14 @@ curl --request GET \
 Returns the highest bid for each token in a collection that has at least one active bid. They key of the 'bids' object is the `tokenIndex` that the bid is associated to.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name   | Type     | Parameter Type | Required? | Description                                                                                      |
 | ------ | -------- | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
 | `slug` | `string` | `path`         | Yes       | The unique slug of the collection. This will be all lowercase and have dashes instead of spaces. |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -257,6 +278,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -287,12 +309,14 @@ curl --request GET \
 Returns a list of the most recent sales for a single collection.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name   | Type     | Parameter Type | Required? | Description                                                                                      |
 | ------ | -------- | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
 | `slug` | `string` | `path`         | Yes       | The unique slug of the collection. This will be all lowercase and have dashes instead of spaces. |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -300,6 +324,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 [
@@ -329,7 +354,9 @@ curl --request GET \
 
 ## GET `/market/collections/:slug/events`
 
-Returns a paginated list of events that took place for a given collection starting from a specific point in time. The `type` query parameter can also be optionally included to filter the response to only include events of the given type. If no `type` parameter is specified, all events after the specified time are included.
+Returns a *paginated* list of events that took place for a given collection starting from a specific point in time. 
+
+The `type` query parameter can also be optionally included to filter the response to only include events of the given type. If no `type` parameter is specified, all events after the specified time are included.
 
 Responses include two parameters relevant for paginating through the results:
 
@@ -339,6 +366,7 @@ Responses include two parameters relevant for paginating through the results:
 These are the same events that can also be attained using the [WebSocket API](#WebSocket-API). Please reference that section for detailed information on each event/message type.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name    | Type     | Parameter Type | Required? | Description                                                                                                                                                                                                                                                           |
 | ------- | -------- | -------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -349,6 +377,7 @@ These are the same events that can also be attained using the [WebSocket API](#W
 | `type`  | `string` | `query`        | No        | An optional filter parameter to only retrieve certain types of events in the call. Allowed type values are: `ASK_PLACED`, `ASK_CANCELLED`, `BID_PLACED`, `BID_CANCELLED`, `TOKEN_TRADED`, `TOKEN_TRANSFERRED`, `TOKEN_MINTED`, `TRAITS_UPDATED`, and `IMAGES_UPDATED` |
 
 ### Example Paginated Request
+{: .no_toc }
 
 Execute the first request with `limit` and `from` set, plus optionally include a `type` filter.
 
@@ -357,9 +386,10 @@ curl --request GET \
   --url 'https://api.archipelago.art/v1/market/collections/alan-ki-aankhen/events?limit=2&from=2022-08-03'
 ```
 
-### Example Response Page 1
+### Example Response
+{: .no_toc }
 
-Notice that `hasNextPage` is equal to `true` in the response, indicating there is more data to be retrieved.
+**Note:** that `hasNextPage` is equal to `true` in the response, indicating there is more data to be retrieved.
 
 ```json
 {
@@ -400,6 +430,7 @@ Notice that `hasNextPage` is equal to `true` in the response, indicating there i
 ```
 
 ### Example Request 2
+{: .no_toc }
 
 Execute a follow-up call to revtreive the next page of data. Repeat this process until `hasNextPage` is `false`, at which point all data will have been returned for the initial query. The follow-up request must be constructed as follows:
 
@@ -417,7 +448,8 @@ curl --request GET \
   --url 'https://api.archipelago.art/v1/market/collections/alan-ki-aankhen/events?limit=2&after=YXItdjEtY29sbGVjdGlvbkV2ZW50c1YxLVsiYWxhbi1raS1hYW5raGVuIixudWxsLCI4MzIzN2ZhYS0zNWQxLTViMzctYzMxNC05NmVhZjQ5MTBhZDEiXQ%3D%3D'
 ```
 
-### Example Response Page 2
+### Example Response 2
+{: .no_toc }
 
 ```json
 {

@@ -6,8 +6,16 @@ nav_order: 4
 ---
 
 # 🖌️ Token Routes
+{: .no_toc }
 
 The Token routes are a sub-section of the broader Collections routes and enable retrieval of information about individual tokens.
+
+## Table of contents
+{: .no_toc .text-delta }
+- TOC
+{:toc}
+
+---
 
 ## GET `/market/collections/:slug/:tokenIndex`
 
@@ -21,6 +29,7 @@ Returns the details for a single token (as a `TokenInfo` object) in a collection
 | `tokenIndex` | `integer` | `path`         | Yes       | The specific token index within the collection to retrieve.                                      |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -28,6 +37,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -122,6 +132,7 @@ Returns the features and traits (as a list of `TokenTrait` objects) for a single
 | `tokenIndex` | `integer` | `path`         | Yes       | The specific token index within the collection to retrieve.                                      |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -129,6 +140,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 [
@@ -172,6 +184,7 @@ Returns the trade and transfer history (as a list of `TokenHistory` objects) for
 | `tokenIndex` | `integer` | Yes       | The specific token index within the collection to retrieve.                                      |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -179,6 +192,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 [
@@ -217,6 +231,7 @@ Returns the ask (price, in WEI) for a single token in a collection.
 | `tokenIndex` | `integer` | `path`         | Yes       | The specific token index within the collection to retrieve.                                      |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -224,6 +239,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -254,6 +270,7 @@ Returns the active bids and asks (price, in WEI) for a single token in a collect
 | `tokenIndex` | `integer` | `path`         | Yes       | The specific token index within the collection to retrieve.                                      |
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -261,6 +278,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {

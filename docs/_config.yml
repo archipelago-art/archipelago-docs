@@ -1,7 +1,7 @@
 title: Archipelago Art
 description: Documentation for the Archipelago Art APIs
 
-remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
 color_scheme: archipelago-light
 search_enabled: true
 

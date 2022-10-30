@@ -6,8 +6,16 @@ nav_order: 6
 ---
 
 # 👩‍💼 User Routes
+{: .no_toc }
 
 The user routes contain endpoints to register, login, and manage all user functions.
+
+## Table of contents
+{: .no_toc .text-delta }
+- TOC
+{:toc}
+
+---
 
 ## POST `/user/login`
 
@@ -18,6 +26,7 @@ The user routes contain endpoints to register, login, and manage all user functi
 Updates the email address that is associated to the user. This will trigger an email to be sent to that email address to confirm the change. Confirmation should only be done via the link in the email.
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request POST \
@@ -30,6 +39,7 @@ curl --request POST \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -42,6 +52,7 @@ curl --request POST \
 Returns basic user information (as a `UserInfo` object) for the authenticated user.
 
 ### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -50,6 +61,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -72,6 +84,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -111,6 +124,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
@@ -146,6 +160,7 @@ curl --request GET \
 ```
 
 ### Example Response
+{:  .no_toc }
 
 ```json
 {
