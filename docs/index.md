@@ -10,10 +10,10 @@ This site serves as documentation for the [Archipelago Art](https://archipelago.
 
 The Archipelago APIs allow you to interact with the Archipelago marketplace. You can use the APIs to:
 - Retrieve statistics about the marketplace (e.g. volume, views, etc.)
-- Lookup market-related information for collections and tokens (e.g. floor price, last sale, bids, etc.)
+- Lookup market-related information for collections and tokens (e.g. floors, bids, etc.)
 - Execute market orders (e.g. buy and sell tokens) 
   - 🚧 **Note:** More information and client libraries for executing orders will be released soon.
-- Get detailed information about a specific collection or token (e.g. name, description, image, features, etc.)
+- Get detailed information about a specific collection or token (e.g. traits, features, etc.)
 - Retreive information about your own bids and asks
 - Lookup a user's collection of tokens
 - Subscribe to events on the marketplace (e.g. new orders, new bids, etc.)

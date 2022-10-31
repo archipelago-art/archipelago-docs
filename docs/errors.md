@@ -27,4 +27,7 @@ The Archipelago API enforces rate limits for each client. Every response from th
 
 The `x-rate-limit-remaining` header will change based on the number of requests made.
 
-**Importantly**, if the rate limit is reached, a 429 HTTP error code will be returned from the API.
+{: .warning-title }
+> Rate Limit Exceeded
+> 
+> If you exceed your rate limit, you will receive a `429 Too Many Requests` HTTP response. You can retry your request after the `Retry-After` header indicates.
