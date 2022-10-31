@@ -17,13 +17,6 @@ The code is written in [vanilla JavaScript](https://developer.mozilla.org/en-US/
 > 
 > This code should not be used in production. It is provided as a starting point for your own implementation.
 
-## Table of Contents
-{: .no_toc .text-delta }
-- TOC
-{:toc}
-
----
-
 ## Sample Code
 
 ```javascript

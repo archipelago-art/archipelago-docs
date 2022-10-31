@@ -6,8 +6,16 @@ has_children: true
 ---
 
 # ↔️ WebSocket API
+{: .no_toc }
 
 The Archipelago WebSocket server allows clients to subscribe to a feed of events for one or many `collections`. The WebSocket server is a great way to get real-time updates on the Archipelago marketplace. The connection is persistent and will remain open until the client closes it.
+
+## Table of Contents
+{: .no_toc .text-delta }
+- TOC
+{: toc }
+
+---
 
 ## Connecting to the WebSocket Server
 
@@ -16,6 +24,10 @@ The WebSocket server is available at `wss://ws.archipelago.art`. You can connect
 The first message sent to the server should be a [`HEARTBEAT` message](message_pairs.md#heartbeat). After that, a [`SUBSCRIBE_TOPIC` message](message_pairs.md#subscribe-topic) can be sent to subscribe to a specific `collection`.
 
 Sample code for connecting to and interacting with the WebSocket server can be found in the [Sample Code](sample_code.md) section.
+
+## The `ALL_COLLECTIONS` Topic
+
+The `ALL_COLLECTIONS` topic is a special topic that will send events for all collections. This is useful for clients that want to subscribe to all collections without having to subscribe to each one individually.
 
 ## Message Nonce
 
