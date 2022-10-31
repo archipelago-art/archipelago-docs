@@ -21,9 +21,14 @@ The user routes contain endpoints to register, login, and manage all user functi
 
 🚧 Coming soon!
 
-## POST `/user/set-email` 🔒 
+## POST `/user/set-email`
 
 Updates the email address that is associated to the user. This will trigger an email to be sent to that email address to confirm the change. Confirmation should only be done via the link in the email.
+
+{: .info-title }
+> 🔒 Authentication Required
+> 
+> Include the `x-archipelago-front-token` header in your request.
 
 ### Example Request
 {:  .no_toc }
@@ -47,9 +52,14 @@ curl --request POST \
 }
 ```
 
-## GET `/user/info` 🔒
+## GET `/user/info`
 
 Returns basic user information (as a `UserInfo` object) for the authenticated user.
+
+{: .info-title }
+> 🔒 Authentication Required
+> 
+> Include the `x-archipelago-front-token` header in your request.
 
 ### Example Request
 {:  .no_toc }
@@ -73,9 +83,17 @@ curl --request GET \
 }
 ```
 
-## GET `/user/bids` 🔒
+## GET `/user/bids`
 
 Returns a list of active bids for the authenticated user.
+
+{: .info-title }
+> 🔒 Authentication Required
+> 
+> Include the `x-archipelago-front-token` header in your request.
+
+### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
@@ -113,9 +131,14 @@ curl --request GET \
 }
 ```
 
-## GET `/user/asks` 🔒
+## GET `/user/asks`
 
 Returns a list of active sales for the authenticated user.
+
+{: .info-title }
+> 🔒 Authentication Required
+> 
+> Include the `x-archipelago-front-token` header in your request.
 
 ```bash
 curl --request GET \
@@ -151,7 +174,17 @@ curl --request GET \
 }
 ```
 
-## GET `/user/:account/tokens` 🔒
+## GET `/user/:account/tokens`
+
+Returns a list of tokens owned by the specified account.
+
+{: .info-title }
+> 🔒 Authentication Required
+> 
+> Include the `x-archipelago-front-token` header in your request.
+
+### Example Request
+{:  .no_toc }
 
 ```bash
 curl --request GET \
