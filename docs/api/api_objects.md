@@ -9,8 +9,8 @@ last_modified_date: "2022-10-30"
 # 📦 Object Types
 {: .no_toc }
 
-These are the different objects that will be found in the Archipelago API. 
-The response data for an individual route will likely reference one or more of these objects.
+These are the common response types that you will see in the Archipelago REST API.
+The documentation for an individual route will likely reference one or more of these objects.
 
 ## Table of contents
 {: .no_toc .text-delta }
