@@ -4,6 +4,9 @@ remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
 color_scheme: archipelago-light
 search_enabled: true
 
+# Set a path/url to a logo that will be displayed instead of the title
+logo: "/assets/images/archipelago-logo.svg"
+
 exclude:
   # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
   - .sass-cache/
