@@ -8,9 +8,14 @@ nav_order: 3
 # 💻 Sample WebSocket Code
 {: .no_toc }
 
-The code below provides a simplified example of how to connect to the Archipelago WebSocket API to send and receive your first messages. **Note: this is only example code and should be used directly in a production application.**
+The code below provides a simplified example of how to connect to the Archipelago WebSocket API to send and receive your first messages.
 
 The code is written in [vanilla JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications) designed to run in the browser.
+
+{: .warning-title }
+> Sample Code Only
+> 
+> This code should not be used in production. It is provided as a starting point for your own implementation.
 
 ## Table of Contents
 {: .no_toc .text-delta }
@@ -18,6 +23,8 @@ The code is written in [vanilla JavaScript](https://developer.mozilla.org/en-US/
 {:toc}
 
 ---
+
+## Sample Code
 
 ```javascript
 // Define the WebSocket and open the connection
@@ -64,7 +71,7 @@ socket.onclose = function (event) {
 };
 ```
 
-### Sample Output
+## Sample Output
 
 Running the sample code above should yield the output below:
 
