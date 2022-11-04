@@ -49,24 +49,42 @@ The overall hierarchy of the Archipelago API is structured as follows:
 
 ## Full Route List
 
+### User Routes
+
+- [POST `/user/login`](user_routes.md#post-userlogin)
+- [POST `/user/set-email`](user_routes.md#post-userset-email)
+- [GET `/user/info`](user_routes.md#get-userinfo)
+- [GET `/user/bids`](user_routes.md#get-userbids)
+- [GET `/user/asks`](user_routes.md#get-userasks)
+- [GET `/user/:account/tokens`](user_routes.md#get-useraccounttokens)
+
 ### Market Routes
+
 - [GET `/market/views`](market_routes.md#get-marketviews)
 - [GET `/market/volume`](market_routes.md#get-marketvolume)
+- [GET `/market/floor-asks`](market_routes.md#get-marketfloor-asks)
+- [GET `/market/floor-bids`](market_routes.md#get-marketfloor-bids)
+- [GET `/market/asks/:askId`](market_routes.md#get-marketasksaskid)
+- [GET `/market/bids/:bidId`](market_routes.md#get-marketbidsbidid)
 
-## Route Table
+### Order Routes
 
-| HTTP Method(s) | Resource                                            |
-| :------------- | :-------------------------------------------------- |
-| `GET`          | [`/market/views`](market_routes.md#get-marketviews) |
-| `GET`          | `/market/volume`                                    |
-| `GET`          | `/market/floor-asks`                                |
-| `GET`          | `/market/asks/:askId`                               |
-| `POST`         | `/market/orders`                                    |
-| `GET`          | `/market/collection`                                |
-| `GET`          | `/market/collection/:slug`                          |
-| `GET`          | `/market/collection/:slug/features`                 |
-| `GET`          | `/market/collection/:slug/asks`                     |
-| `GET`          | `/market/collection/:slug/bids`                     |
-| `GET`          | `/market/collection/:slug/last-sales`               |
-| `GET`          | `/market/collection/:slug/events`                   |
+- [POST `/market/orders`](order_routes.md#post-marketorders)
+  
+### Collection Routes
 
+- [GET `/market/collections/`](collection_routes.md#get-marketcollections)
+- [GET `/market/collections/:slug`](collection_routes.md#get-marketcollectionsslug)
+- [GET `/market/collections/:slug/features`](collection_routes.md#get-marketcollectionsslugfeatures)
+- [GET `/market/collections/:slug/asks`](collection_routes.md#get-marketcollectionsslugasks)
+- [GET `/market/collections/:slug/bids`](collection_routes.md#get-marketcollectionsslugbids)
+- [GET `/market/collections/:slug/last-sales`](collection_routes.md#get-marketcollectionssluglast-sales)
+- [GET `/market/collections/:slug/events`](collection_routes.md#get-marketcollectionsslugevents)
+
+### Token Routes
+
+- [GET `/market/collections/:slug/:tokenIndex`](token_routes.md#get-marketcollectionsslugtokenindex)
+- [GET `/market/collections/:slug/:tokenIndex/features`](token_routes.md#get-marketcollectionsslugtokenindexfeatures)
+- [GET `/market/collections/:slug/:tokenIndex/history`](token_routes.md#get-marketcollectionsslugtokenindexhistory)
+- [GET `/market/collections/:slug/:tokenIndex/ask`](token_routes.md#get-marketcollectionsslugtokenindexask)
+- [GET `/market/collections/:slug/:tokenIndex/orders`](token_routes.md#get-marketcollectionsslugtokenindexorders)
