@@ -22,6 +22,7 @@ The Token routes are a sub-section of the broader Collections routes and enable 
 Returns the details for a single token (as a `TokenInfo` object) in a collection.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name         | Type      | Parameter Type | Required? | Description                                                                                      |
 | ------------ | --------- | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
@@ -125,6 +126,7 @@ curl --request GET \
 Returns the features and traits (as a list of `TokenTrait` objects) for a single token in a collection.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name         | Type      | Parameter Type | Required? | Description                                                                                      |
 | ------------ | --------- | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
@@ -176,7 +178,8 @@ curl --request GET \
 
 Returns the trade and transfer history (as a list of `TokenHistory` objects) for a single token in a collection.
 
-### Parameters
+### Request Parameters
+{:  .no_toc }
 
 | Name         | Type      | Required? | Description                                                                                      |
 | ------------ | --------- | --------- | ------------------------------------------------------------------------------------------------ |
@@ -224,6 +227,7 @@ curl --request GET \
 Returns the ask (price, in WEI) for a single token in a collection.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name         | Type      | Parameter Type | Required? | Description                                                                                      |
 | ------------ | --------- | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
@@ -263,6 +267,7 @@ curl --request GET \
 Returns the active bids and asks (price, in WEI) for a single token in a collection.
 
 ### Request Parameters
+{:  .no_toc }
 
 | Name         | Type      | Parameter Type | Required? | Description                                                                                      |
 | ------------ | --------- | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
